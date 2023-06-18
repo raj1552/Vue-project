@@ -107,9 +107,8 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
-    padding: 12px 0;
     transition: 0.5 ease all;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
     @media (min-width: 1140px) {
@@ -134,13 +133,14 @@ header {
       padding-bottom: 14px;
       border-bottom: 1px solid transparent;
 
-      &:hover {
+      &:hover ,
+      link{
         color: aqua;
         border-color: aqua;
       }
     }
 
-    .branding {
+    .Brand {
       display: flex;
       align-items: center;
     }
