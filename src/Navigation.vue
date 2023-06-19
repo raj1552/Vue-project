@@ -2,27 +2,24 @@
   <header>
     <nav :class="{ scrollednav: scrollposition }">
       <div class="Brand">
-        <img src="src/assets/GitHub-Mark.png" alt="" />
+        <img src="src/webasserts/221-2218794_hype-clothing-logo.png" alt="" />
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
           <router-link class="link" :to="{ name: 'home' }">Home</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Who we are</router-link>
+          <router-link class="link" :to="{ name: '' }">Product</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Annual Reports</router-link
+          <router-link class="link" :to="{ name: '' }">Contact</router-link
           >
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Careers</router-link>
+          <router-link class="link" :to="{ name: '' }">Shop</router-link>
         </li>
         <li>
           <router-link class="link" :to="{ name: '' }">Gallery</router-link>
-        </li>
-        <li>
-          <router-link class="link" :to="{ name: '' }">Contact us</router-link>
         </li>
       </ul>
       <div class="icon">
@@ -36,26 +33,21 @@
       <transition class="mobile-nav">
         <ul v-show="mobilenav" class="dropdown-nav">
           <li>
-            <router-link class="link" :to="{ name: 'home' }">Home</router-link>
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Who we are</router-link
-            >
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Annual Reports</router-link
-            >
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Careers</router-link>
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Gallery</router-link>
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }" >Contact us</router-link
-            >
-          </li>
+          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
+        </li>
+        <li>
+          <router-link class="link" :to="{ name: '' }">Product</router-link>
+        </li>
+        <li>
+          <router-link class="link" :to="{ name: '' }">Contact</router-link
+          >
+        </li>
+        <li>
+          <router-link class="link" :to="{ name: '' }">Shop</router-link>
+        </li>
+        <li>
+          <router-link class="link" :to="{ name: '' }">Gallery</router-link>
+        </li>
         </ul>
       </transition>
     </nav>
@@ -95,11 +87,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 header {
-  background-color: rgb(32, 32, 32);
+  background-color: black;
   z-index: 99;
   width: 100%;
-  position: fixed;
   transition: 0.5s ease all;
   color: #fff;
 
@@ -133,8 +125,7 @@ header {
       padding-bottom: 14px;
       border-bottom: 1px solid transparent;
 
-      &:hover ,
-      link{
+      &:hover {
         color: aqua;
         border-color: aqua;
       }
@@ -145,7 +136,8 @@ header {
       align-items: center;
     }
     img {
-      width: 50px;
+      width: 90px;
+      border-radius: 50px;
       transition: 0.5s ease all;
     }
     .navigation {
