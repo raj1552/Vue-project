@@ -1,41 +1,49 @@
 <template>
-    <div class="Banner-image">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On All Products</h1>
-        <p>Save more with coupons & 70% off%</p>
-        <div class="btn">
-            <span> Explore now &#x2794;</span>
+    <div v-bind:class="[{Banner_image:images},'fitting']">
+        <h4>{{ Trade }}</h4>
+        <h2>{{ Deals }}</h2>
+        <h1>{{ Product }}</h1>
+        <p>{{ Save }}</p>
+        <div v-bind:class="[{impclass:isimp}]">
+            <span>{{ Explore }} &#x2794;</span>
         </div>
         </div>
 </template>
 <script>
 export default{
-    name:'Banner'
+    data(){
+        return{
+            Trade:'Trade-in-offer',
+            Deals:'Super value Deals',
+            Product:'On All Products',
+            Save:'Save more with coupons & 70% off%',
+            Explore:' Explore now',
+            isimp:true,
+            images:true
+        }
+    }
 }
 </script>
 <style>
-.Banner-image{
-    background-image: url("src/webasserts/1152281-women-model-simple-background-short-hair-Asian-white-dress-dress-fashion-hands-on-hips-wedding-dress-spring-clothing-Masami-Nagasawa-bride-dance-arm-gown-photo-shoot.jpg");
+.Banner_image{
+    background-image: url('src/webasserts/1152281-women-model-simple-background-short-hair-Asian-white-dress-dress-fashion-hands-on-hips-wedding-dress-spring-clothing-Masami-Nagasawa-bride-dance-arm-gown-photo-shoot.jpg');
     height: 90vh;
-    width: 100%;
     background-size: cover;
-    background-position: top 10% right 0;
+    background-position: top 20% right 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
+    font-size: 25px;
 }
-.Banner-image h4,h2,h1,p{
+.fitting{
     padding: 0 80px;
-    
 }
-.Banner-image,.btn,span{
-    padding: 0 80px;
-    background-color: wheat;
-    padding: 20px;
-    border-radius: 20px;
+.impclass{
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: blueviolet;
 }
 
 </style>

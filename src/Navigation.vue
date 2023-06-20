@@ -2,7 +2,7 @@
   <header>
     <nav :class="{ scrollednav: scrollposition }">
       <div class="Brand">
-        <img src="src/webasserts/221-2218794_hype-clothing-logo.png" alt="" />
+        <img v-bind:src="url"/>
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
@@ -23,12 +23,7 @@
         </li>
       </ul>
       <div class="icon">
-        <i
-          @click="togglemobileNav"
-          v-show="mobile"
-          class="fa-sharp fa-regular fa-bars-staggered"
-          :class="{ 'icon-active': mobilenav }"
-        ></i>
+        <i @click="togglemobileNav" v-show="mobile" class="fa-sharp fa-regular fa-bars-staggered" :class="{ 'icon-active': mobilenav }" ></i>
       </div>
       <transition class="mobile-nav">
         <ul v-show="mobilenav" class="dropdown-nav">
@@ -58,6 +53,7 @@ export default {
   name: "navigation",
   data() {
     return {
+      url:'src/webasserts/221-2218794_hype-clothing-logo.png',
       scrollposition: null,
       mobile: null,
       mobilenav: null,

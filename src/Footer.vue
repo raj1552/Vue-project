@@ -30,8 +30,18 @@ export default{
 }</script>
 <style>
 .footer{
+    width: 100%;
+    background-color: black;
+    color: white;
     display: grid;
     grid-gap: 70px 20px;
     grid-template-columns: repeat(4,1fr);
+    padding: 100px 300px;
+    cursor: pointer;
+}
+.footer .fot-image img{
+    width: 90px;
+      border-radius: 50px;
+      transition: 0.5s ease all;
 }
 </style>

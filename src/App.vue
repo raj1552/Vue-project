@@ -6,7 +6,7 @@
   <fproduct/>
 <accesor/>
   <Accessories/>
-  <Footer/>
+  <footer/>
 
 </template>
 
@@ -17,7 +17,7 @@ import Featured from './Featured.vue';
 import Fproduct from './Fproduct.vue';
 import Accessories from './Accessories.vue';
 import Accesor from './Accesor.vue';
-import Footer from './Footer.vue';
+import footer from './footer.vue';
 export default{
   name:'app',
   components:{
@@ -27,15 +27,11 @@ export default{
     Fproduct,
     Accessories,
     Accesor,
-    Footer
+    footer
 }
 }
 </script>
-<style scoped>
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+<style lang="scss">
+@import 'src/main.css';
 
 </style>
