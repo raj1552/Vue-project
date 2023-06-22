@@ -5,6 +5,7 @@
 </template>
 <script>
 export default{
+    name:'Accesor',
 data(){
     return{
         Accessories:"Accessories for men and women"

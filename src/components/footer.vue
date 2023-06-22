@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="fot-image">
-            <img src="src/webasserts/221-2218794_hype-clothing-logo.png" alt="">
+            <img src="src/assets/webasserts/221-2218794_hype-clothing-logo.png" alt="">
         </div>
         <div class="ourservice">
             <h1>Our service</h1>
@@ -30,11 +30,10 @@ export default{
 }</script>
 <style>
 .footer{
-    width: 100%;
     background-color: black;
     color: white;
     display: grid;
-    grid-gap: 70px 20px;
+    grid-gap: 90px 30px;
     grid-template-columns: repeat(4,1fr);
     padding: 100px 300px;
     cursor: pointer;

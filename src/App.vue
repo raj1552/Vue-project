@@ -1,37 +1,22 @@
 
 <template>
+ <div id="app">
   <Navigation/>
-  <Banner/>
-  <Featured/>
-  <fproduct/>
-<accesor/>
-  <Accessories/>
-  <footer/>
-
+ </div>
 </template>
 
 <script>
-import Navigation from './Navigation.vue';
-import Banner from'./Banner.vue'
-import Featured from './Featured.vue';
-import Fproduct from './Fproduct.vue';
-import Accessories from './Accessories.vue';
-import Accesor from './Accesor.vue';
-import footer from './footer.vue';
+import Navigation from './components/Navigation.vue';
 export default{
   name:'app',
   components:{
-    Navigation,
-    Banner,
-    Featured,
-    Fproduct,
-    Accessories,
-    Accesor,
-    footer
-}
+    Navigation
+  }
 }
 </script>
-<style lang="scss">
-@import 'src/main.css';
-
-</style>
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}</style>

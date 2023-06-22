@@ -11,6 +11,7 @@
 </template>
 <script>
 export default{
+    name:'banner',
     data(){
         return{
             Trade:'Trade-in-offer',
@@ -26,7 +27,7 @@ export default{
 </script>
 <style>
 .Banner_image{
-    background-image: url('src/webasserts/1152281-women-model-simple-background-short-hair-Asian-white-dress-dress-fashion-hands-on-hips-wedding-dress-spring-clothing-Masami-Nagasawa-bride-dance-arm-gown-photo-shoot.jpg');
+    background-image: url('src/assets/webasserts/1152281-women-model-simple-background-short-hair-Asian-white-dress-dress-fashion-hands-on-hips-wedding-dress-spring-clothing-Masami-Nagasawa-bride-dance-arm-gown-photo-shoot.jpg');
     height: 90vh;
     background-size: cover;
     background-position: top 20% right 0;

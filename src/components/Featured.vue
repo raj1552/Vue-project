@@ -15,5 +15,7 @@ export default{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 </style>

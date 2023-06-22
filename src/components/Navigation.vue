@@ -2,24 +2,24 @@
   <header>
     <nav :class="{ scrollednav: scrollposition }">
       <div class="Brand">
-        <img v-bind:src="url"/>
+        <router-link to="app"><img v-bind:src="url"/></router-link>
       </div>
       <ul v-show="!mobile" class="navigation">
         <li>
-          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
+          <router-link class="link" to="/">Home</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Product</router-link>
+          <router-link class="link" :to="{ name: 'product' }">Product</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Contact</router-link
+          <router-link class="link" :to="{ name: 'contact' }">Contact</router-link
           >
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Shop</router-link>
+          <router-link class="link" :to="{ name: 'shop' }">Shop</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Gallery</router-link>
+          <router-link class="link" :to="{ name: 'gallery' }">Gallery</router-link>
         </li>
       </ul>
       <div class="icon">
@@ -28,32 +28,33 @@
       <transition class="mobile-nav">
         <ul v-show="mobilenav" class="dropdown-nav">
           <li>
-          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
+          <router-link class="link" to="/">Home</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Product</router-link>
+          <router-link class="link" :to="{ name: 'product' }">Product</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Contact</router-link
+          <router-link class="link" :to="{ name: 'contact' }">Contact</router-link
           >
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Shop</router-link>
+          <router-link class="link" :to="{ name: 'shop' }">Shop</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Gallery</router-link>
+          <router-link class="link" :to="{ name: 'gallery' }">Gallery</router-link>
         </li>
         </ul>
       </transition>
     </nav>
   </header>
+  <router-view/>
 </template>
 <script>
 export default {
-  name: "navigation",
+  name:'Navigation',
   data() {
     return {
-      url:'src/webasserts/221-2218794_hype-clothing-logo.png',
+      url:'src/assets/webasserts/221-2218794_hype-clothing-logo.png',
       scrollposition: null,
       mobile: null,
       mobilenav: null,
@@ -102,12 +103,9 @@ header {
     @media (min-width: 1140px) {
       max-width: 1140px;
     }
-    ul,
-    .list {
+    ul,.list {
       font-weight: 500px;
-      color: #fff;
       list-style: none;
-      text-decoration: none;
     }
     li {
       cursor: pointer;
@@ -120,6 +118,8 @@ header {
       transition: 0.5s ease all;
       padding-bottom: 14px;
       border-bottom: 1px solid transparent;
+      text-decoration:none;
+      color: #fff;
 
       &:hover {
         color: aqua;
@@ -130,6 +130,7 @@ header {
     .Brand {
       display: flex;
       align-items: center;
+      padding: 15px;
     }
     img {
       width: 90px;
