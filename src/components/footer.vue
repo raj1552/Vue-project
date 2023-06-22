@@ -37,6 +37,7 @@ export default{
     grid-template-columns: repeat(4,1fr);
     padding: 100px 300px;
     cursor: pointer;
+    gap: 10px;
 }
 .footer .fot-image img{
     width: 90px;

@@ -1,7 +1,8 @@
 <template>
-    <h1>asasas</h1>
+    <Shop/>
 </template>
 <script setup>
+import Shop from '../components/shop.vue';
 </script>
 <style>
 </style>

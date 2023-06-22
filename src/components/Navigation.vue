@@ -87,7 +87,7 @@ export default {
 
 header {
   background-color: black;
-  z-index: 99;
+  z-index: 999;
   width: 100%;
   transition: 0.5s ease all;
   color: #fff;
@@ -96,6 +96,8 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     transition: 0.5 ease all;
     width: 100%;
     margin: 0 auto;
@@ -110,8 +112,7 @@ header {
     li {
       cursor: pointer;
       text-transform: uppercase;
-      padding: 16px;
-      margin-left: 16px;
+      padding:0px 20px;
     }
     .link {
       font-size: 14px;

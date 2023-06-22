@@ -45,17 +45,20 @@ export default {
   padding-bottom: 40px;
 }
 .accer .accessories {
+  position: relative;
+  top: 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 25px;
   align-items: center;
   padding: 10px 15px;
+  transition: top ease 0.5s;
 }
 .accer .accessories:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  transition: 1s ease all;
+    top: -10px;
 }
 .accer .accessories img {
   width: 100%;

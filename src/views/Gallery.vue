@@ -1,7 +1,8 @@
 <template>
-    <h1>Gallery page</h1>
+   <galleryshow/>
     </template>
     <script setup>
+    import galleryshow from '../components/galleryshow.vue'
     </script>
     <style>
     </style>
