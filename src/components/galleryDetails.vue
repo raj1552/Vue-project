@@ -3,7 +3,7 @@
 </template>
 <script>
 export default{
-    name:'galleryshow'
+    name:'galleryDetails'
 }</script>
 <style>
 </style>

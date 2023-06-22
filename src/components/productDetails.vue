@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: "fproduct",
+  name: "productdetails",
   data() {
     return {
       links: [

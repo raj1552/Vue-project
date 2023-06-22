@@ -11,7 +11,7 @@
 </template>
 <script>
 export default{
-    name:'banner',
+    name:'homebanner',
     data(){
         return{
             Trade:'Trade-in-offer',

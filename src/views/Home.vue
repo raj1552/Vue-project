@@ -1,5 +1,5 @@
 <template>
-<banner/>
+<homebanner/>
 <div class="Featured-product">
         <h1>Featured product</h1>
         <h3>Summer Collection new modern design</h3>
@@ -10,11 +10,11 @@
 <Footer/>
 </template>
 <script setup>
- import banner from'../components/Banner.vue'
- import fproduct from '../components/Fproduct.vue'
- import Accesor from '../components/Accesor.vue';
- import accessories from '../components/Accessories.vue';
- import Footer from '../components/footer.vue';
+ import homebanner from'../components/homeBanner.vue'
+ import fproduct from '../components/productDetails.vue'
+ import Accesor from '../components/accessoriesHeader.vue';
+ import accessories from '../components/accessoriesDetails.vue';
+ import Footer from '../components/Global/Footer.vue';
 </script>
 <style>
 .Featured-product{

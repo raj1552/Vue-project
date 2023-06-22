@@ -4,9 +4,9 @@
     <Footer/>
 </template>
 <script setup>
-import Featured from '../components/Featured.vue';
-import Fproduct from '../components/Fproduct.vue';
-import Footer from '../components/footer.vue'
+import Featured from '../components/productHeader.vue';
+import Fproduct from '../components/productDetails.vue';
+import Footer from '../components/Global/Footer.vue'
 </script>
 <style>
 </style>

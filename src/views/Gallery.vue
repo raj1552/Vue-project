@@ -1,8 +1,8 @@
 <template>
-   <galleryshow/>
+   <galleryDetails/>
     </template>
     <script setup>
-    import galleryshow from '../components/galleryshow.vue'
+    import galleryDetails from '../components/galleryDetails.vue'
     </script>
     <style>
     </style>
